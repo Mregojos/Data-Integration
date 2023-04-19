@@ -24,6 +24,7 @@ prefect cloud login
 # Clone the repo
 git clone https://github.com/Mregojos/Data-Integration
 
+cd Data-Integration
 pip install -U -r requirements.txt
 python ./data-processing
 ```
