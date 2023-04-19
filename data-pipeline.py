@@ -75,6 +75,13 @@ def load(outlook_noc_2021, outlook_noc_2016, institutions_programs_cleaned):
     outlook_noc_2021.to_csv('processed-data/outlook_noc_2021.csv')
     outlook_noc_2016.to_csv('processed-data/outlook_noc_2016.csv')
     institutions_programs_cleaned.to_csv('processed-data/institutions_programs.csv')
+
+#--------------------Load: Local Storage (in parquet)------------------------------#
+@task(log_prints=True, name='Load to local storage (in parquet format)')
+def load_parquet(outlook_noc_2021, outlook_noc_2016, institutions_programs_cleaned):
+    outlook_noc_2021.to_parquet('processed-data/outlook_noc_2021.parquet')
+    outlook_noc_2016.to_parquet('processed-data/outlook_noc_2016.parquet')
+    institutions_programs_cleaned.to_parquet('processed-data/institutions_programs.parquet')
     
 #--------------------Workflow----------------------------------------#
 @flow(log_prints=True, name='Prefect-Workflow')
@@ -84,6 +91,7 @@ def workflow():
     outlook_noc_2021, outlook_noc_2016, institutions_programs = dataframe()
     institutions_programs_cleaned = data_cleaning(institutions_programs)
     load(outlook_noc_2021, outlook_noc_2016, institutions_programs_cleaned)
+    load_parquet(outlook_noc_2021, outlook_noc_2016, institutions_programs_cleaned)
 
 #--------------------Execution----------------------------------------#
 if __name__=="__main__":
