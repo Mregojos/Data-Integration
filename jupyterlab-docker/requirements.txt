@@ -1,1 +1,10 @@
-
+jupyterlab
+prefect
+pyspark
+pandas
+matplotlib
+seaborn
+numpy
+psycopg2-binary
+openpyxl
+pyarrow
