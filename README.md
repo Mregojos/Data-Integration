@@ -28,5 +28,5 @@ pip install -U -r requirements.txt
 python ./data-processing
 ```
 
-![Prefect Cloud](https://github.com/Mregojos/Data-Integration/blob/main/images/Prefect%20Cloud.png)
+![Prefect Cloud](https://github.com/Mregojos/Data-Integration/blob/main/images/Prefect%20Cloud%20v2.png)
 
