@@ -27,7 +27,7 @@ git clone https://github.com/Mregojos/Data-Integration
 
 cd Data-Integration
 pip install -U -r requirements.txt
-python ./data-processing
+python ./data-processing.py
 ```
 
 ![Prefect Cloud](https://github.com/Mregojos/Data-Integration/blob/main/images/Prefect%20Cloud%20v2.png)
