@@ -15,7 +15,7 @@
   * List of post-secondary academic institutions and programs validated by the Public Service Commission-2023-04-03
   
 ## Tech Stack
-* Python, Pandas, Prefect
+* Python, Pandas, Prefect Cloud
 
 ## Tasks
 ```sh
