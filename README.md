@@ -4,7 +4,7 @@
 
 ## Objective
 * Process and clean the data
-* Integrate the data
+* Integrate and the data in csv and in parquet format
 * Orchestrate the data pipeline
 * Query the data
 
