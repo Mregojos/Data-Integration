@@ -18,9 +18,15 @@
 * Python, Pandas, Prefect
 
 ```sh
+# Prefect Cloud and login
+prefect cloud login
+
+# Clone the repo
 git clone https://github.com/Mregojos/Data-Integration
 
 pip install -U -r requirements.txt
 python ./data-processing
 ```
+
+![Prefect Cloud](https://github.com/Mregojos/Data-Integration/blob/main/images/Prefect%20Cloud.png)
 
